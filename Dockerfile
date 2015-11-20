@@ -1,4 +1,4 @@
-FROM google/nodejs
+FROM node:4-onbuild
 
 WORKDIR /app
 ADD package.json /app/
@@ -7,4 +7,4 @@ ADD . /app
 
 EXPOSE 8000
 CMD []
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+ENTRYPOINT ["npm", "start"]
