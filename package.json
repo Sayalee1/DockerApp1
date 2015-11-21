@@ -1,6 +1,6 @@
 {
-  "name": "Continuous Integration and Deployment is Working Successfully!",
-  "description": "Jenkins Docker Integration Test",
+  "name": "hello-jenkins",
+  "description": "hello jenkins test app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
