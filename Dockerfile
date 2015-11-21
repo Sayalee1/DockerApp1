@@ -15,9 +15,7 @@ COPY app.js /usr/src/
 COPY test /usr/src/test
 COPY script /usr/src/script
 
-# user to non-privileged user
-USER nobody
-
 # Expose the application port and run application
 EXPOSE 5050
 CMD ["node","app.js"]
+ENTRYPOINT ["npm", "start"]
