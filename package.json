@@ -1,10 +1,13 @@
 {
-  "name": "hello-world",
-  "description": "hello world",
+  "name": "Continuous Integration and Deployment is Working Successfully!",
+  "description": "Jenkins Docker Integration Test",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x"
+    "express": "3.12.0"
   },
-  "scripts": {"start": "node app.js"}
+  "devDependencies": {
+    "mocha": "1.20.1",
+    "supertest": "0.13.0"
+  }
 }

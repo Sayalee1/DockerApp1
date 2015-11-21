@@ -1,5 +1,5 @@
-#New Comment
-FROM node:4-onbuild
+FROM node:latest
+MAINTAINER mike.coleman@docker.com
 
 # set default workdir
 WORKDIR /usr/src
@@ -19,5 +19,5 @@ COPY script /usr/src/script
 USER nobody
 
 # Expose the application port and run application
-EXPOSE 5050
+EXPOSE 5000
 CMD ["node","app.js"]

@@ -1,14 +1,11 @@
-// Load the http module to create an http server.
-var http = require('http');
+var express = require('express');
  
-// Configure our HTTP server to respond with Hello World to all requests.
-var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello Worldn");
+var app = express();
+ 
+app.get('/', function (req, res) {
+  res.send('Continuous Integration and Deployment is Working Successfully!');
 });
  
-// Listen on port 8000, IP defaults to "0.0.0.0"
-server.listen(8000);
+app.listen(process.env.PORT || 5050);
  
-// Put a friendly message on the terminal
-console.log("Server running at http://127.0.0.1:8000/");
+module.exports = app;
